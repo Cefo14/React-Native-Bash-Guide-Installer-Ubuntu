@@ -62,10 +62,11 @@ avdmanager create avd -n Nexus_5X -k "system-images;android-27;google_apis;x86" 
 
 # install kvm
 apt install qemu-kvm
-# add user kvm 
-adduser userName kvm
 
-# No se para que es esta pitada
+# add user kvm 
+adduser $USERNAME kvm
+
+# this package translates GTK+ widgets signals to event sounds
 sudo apt-get install libcanberra-gtk-module:i386
 
 # /* Configure AVD END */
